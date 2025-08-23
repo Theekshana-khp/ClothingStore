@@ -1,0 +1,17 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‡œş–€2J$59d7f5cf-b629-4bc8-a80c-8ee669e11e28
+’	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ÀÈ|8‰œş–€2J$15c9bd7b-83ce-4d5b-a193-e0a22c7762c5
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(çØ–ıÿÿÿÿ8Šœş–€2J$858e3f62-b83e-4efd-8381-19eaaac62fd7
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êƒá«8Œœş–€2J$e952e0a2-c513-4cfb-9843-753cd7acff59
+
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(Ì·¸»ùÿÿÿÿ8Íàƒ—€2J$09bc31b8-89f0-4502-afb0-7dc81692e750
+g
+java:S6905"Don't use the query "SELECT *".(Ì·¸»ùÿÿÿÿ8”œş–€2J$7c1060d8-67b1-485b-8fdd-98f8e3e7cc0e
+…
+java:S1858"C"getString" returns a string, there's no need to call "toString()".(…ÀÈ|8•œş–€2J$9ecd9722-61a6-4306-a5d5-36d9ab71e27f
+ƒ
+java:S1128";Remove this unused import 'bisinessLayer.model.PlaceOrder'.(åÏÖ¶üÿÿÿÿ8Óàƒ—€2J$78b0d334-14b6-4a59-b39d-ab7294456485
+{
+java:S1128"8Remove this unused import 'bisinessLayer.model.Product'.(ŒÎÆ›8Óàƒ—€2J$d3c09c9e-a308-4341-8363-4bd4409f05df
+†
+java:S1128">Remove this unused import 'javafx.collections.ObservableList'.(ÄÜ€éüÿÿÿÿ8Óàƒ—€2J$2e950c15-5afc-4bb3-b4c7-6d227b960c07

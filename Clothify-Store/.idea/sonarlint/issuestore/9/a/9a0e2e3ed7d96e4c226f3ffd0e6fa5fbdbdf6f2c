@@ -1,0 +1,9 @@
+
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂàÁêùÿÿÿÿ8õşı…„2J$1018f94f-d3d4-44e2-adf2-ca57cefdcff9
+˜	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òİ”çıÿÿÿÿ8·áö†„2J$80d3a6ad-3827-4478-9513-9754407df658
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûÁ¬ã8öşı…„2J$e5cf6eb4-a9e8-4ff5-911f-a57b5f3dafe1
+	java:S116"MRename this field "ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ŞÒï8÷şı…„2J$acbd3e39-be2f-4ccf-a279-1bab31eec5ef
+’	java:S116
+"PRename this field "Email" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áï»‚8÷şı…„2J$09bbcfdf-221b-4064-b20a-dd0b2b88b5c7
+”	java:S116"RRename this field "JobRole" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰‘ïå8÷şı…„2J$bbee0938-1aa2-434b-83f3-aad8739971c6
+“	java:S116"QRename this field "Salary" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÏÌÖ8÷şı…„2J$da51f035-3903-495a-b7bd-0ec8a8bf0b03

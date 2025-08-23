@@ -1,0 +1,5 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¹ÍÖ„2J$f1f2c1f2-9504-4a3a-8e54-e267a8f23b76
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«¦çÖ8ÓëËÖ„2J$1f6bd322-6043-4375-a52b-b2d9d611da67
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¥»„‡ÿÿÿÿÿ8‹üÕÖ„2

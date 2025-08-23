@@ -1,0 +1,5 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûÁ¬ãJ$c386b009-e302-4a97-88c7-02672c41e980
+	java:S116"RRename this field "OrderID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ôËJ$a6d35e1c-d586-4842-93f4-8f2f5d544d2c
+	java:S116"TRename this field "ProductId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éà€¬J$b1333d3a-c292-410a-8987-c218bbb794fc
+	java:S116	"]Rename this field "ProductDescription" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎºúÿÿÿÿÿJ$55fd1586-3a44-47db-922c-36e80504d943

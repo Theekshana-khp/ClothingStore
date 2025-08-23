@@ -1,0 +1,60 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8çÀëËƒ2J$cce093fc-01ac-43b4-be0f-2b93b528bdd3
+	java:S112."FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8éÀëËƒ2J$e866c695-14a5-43c8-8338-451c46474a45
+	java:S112L"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8éÀëËƒ2J$371bfa22-b8e3-427e-a162-03f57ae7759b
+	java:S112f"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8éÀëËƒ2J$1432fbc4-e6ad-4a15-b375-a50f361dd383
+	java:S112{"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8êÀëËƒ2J$d157c68e-3ee1-4125-986e-b1aa4a6b6261
+	java:S112‹"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8êÀëËƒ2J$dfa50ffd-5d42-4595-a893-c53e70dbcd8f
+	java:S112­"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8êÀëËƒ2J$df4d4c68-0ba9-4a43-8749-6c8eefcfbd2b
+	java:S112Õ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8êÀëËƒ2J$6ef0515f-8939-4e6f-883e-76f041a71126
+q
+java:S10664"/Merge this if statement with the enclosing one.(èßåk8ëÀëËƒ2J$311bd1ee-3b1b-440c-a578-fbae187bb45f
+r
+java:S10665"/Merge this if statement with the enclosing one.(ë—İ8ìÀëËƒ2J$2d5ca398-5505-4495-8647-03b9d1059c8b
+”	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·¥ê©8ìÀëËƒ2J$9553c305-14e7-4f3f-ad02-e69e925f4860
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(˜í¹ÿøÿÿÿÿ8îÀëËƒ2J$2d386f19-b43c-4e1b-9423-c3d483ad65a9
+p
+java:S54113"(Use a primitive boolean expression here.(Ã»ƒÉùÿÿÿÿ8ïÀëËƒ2J$be23b6f4-9c27-44e4-87a5-79b8ca462fb6
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­¿ÅŒ8ñÀëËƒ2J$bf645fe6-d0d7-4366-9775-cd6b63b139c2
+“
+java:S2095•"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(üºšÄ8ĞÁëËƒ2J$950797df-0863-45b7-84e2-72aca6bdd9d5
+˜
+java:S2095É"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(±”‘¨ÿÿÿÿÿ8Á§ŠÌƒ2J$ec133816-44ca-4f49-8540-fd403e32b7b0
+“
+java:S2095ƒ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(íËë‘8ĞÁëËƒ2J$2e3c9234-1fdc-4306-9e9a-dc12e6c8e12f
+Š
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(úà„8ĞÁëËƒ2J$e30497e9-ca30-4794-8cb9-f11d7772ca69
+Š
+java:S2095)"GUse try-with-resources or close this "Statement" in a "finally" clause.(ÃÆ õ8ĞÁëËƒ2J$8ba6c8c8-8c35-4c36-89fa-806c0529efc5
+’
+java:S2095p"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(íç†­8ĞÁëËƒ2J$2b1ab0c2-6c7f-401a-baed-1881849e3c06
+“
+java:S2095»"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(üš˜ß8ĞÁëËƒ2J$3622227b-19e6-4b5e-b841-02c8903058c4
+’
+java:S2095¢"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(µÛ®>8ĞÁëËƒ2J$6716f3b4-85b4-4685-a88e-b6a932e5da36
+—
+java:S2095W"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(éÃä‡ûÿÿÿÿ8ÑÁëËƒ2J$12ae7878-e582-420b-8650-8a2338e4ba58
+“
+java:S2095Á"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ˆ´õ8ĞÁëËƒ2J$549f82a2-e4a9-4a33-a57f-f1b4c2f6dfef
+—
+java:S2095A"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(£¾‹Œüÿÿÿÿ8ÑÁëËƒ2J$4ae9d88d-890a-4ea0-81c4-a71c3594172b
+“
+java:S2095µ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŠŒÁ©8ĞÁëËƒ2J$a1fc274b-9f6e-4e0d-8138-e6977040b6d4
+b
+java:S6905"Don't use the query "SELECT *".(úà„8ÜÁëËƒ2J$00263e33-1884-4248-8115-2a291539148e
+b
+java:S6905)"Don't use the query "SELECT *".(ÃÆ õ8äÁëËƒ2J$1122af1b-e060-4d37-aec3-ee1724f0caff
+†
+java:S1858+"C"getString" returns a string, there's no need to call "toString()".(Á£İ™8çÁëËƒ2J$0c7cc68e-f72a-4e7b-8ef9-09e29df1bce0
+ƒ
+java:S1119U";Refactor the code to remove this label and the need for it.(·–İüÿÿÿÿ8ïÁëËƒ2J$61e03996-233a-4db8-9d29-7c79526647c5
+a
+java:S1065U"Remove this unused label.(·–İüÿÿÿÿ8ğÁëËƒ2J$3631f161-a55c-4658-a859-c9b6338348b1
+o
+java:S1125b"'Remove the unnecessary boolean literal.(ÆÇ†šøÿÿÿÿ8ôÁëËƒ2J$0229579a-2d1c-4997-af98-314fe7326eb6
+c
+java:S6905•"Don't use the query "SELECT *".(üºšÄ8ƒÂëËƒ2J$e7be42d2-28bb-4537-9955-dbcae749db9b
+b
+java:S6905¢"Don't use the query "SELECT *".(µÛ®>8‡ÂëËƒ2J$2eb81b65-fd90-4e37-a54f-6204811b6154
+š
+java:S6912¥"VUse "addBatch" and "executeBatch" to execute multiple SQL statements in a single call.(§Ùÿ8‘ÂëËƒ2J$4fff29fa-55ce-4838-a1c2-3bef214f0d9f

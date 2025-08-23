@@ -1,0 +1,4 @@
+
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ê¥ù°ûÿÿÿÿ8°Êå¶ƒ2J$2fcd0ea3-9920-44d9-9683-a4fd34fc9350
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûÁ¬ã8²Êå¶ƒ2J$826bb7a5-23d2-4e5d-8b8a-ffd4cf9565d0
+š	java:S116	"SRename this field "Quantity" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÙÕéûÿÿÿÿ8³Êå¶ƒ2J$bc91873b-e329-4897-b3df-fbd3ff94e477

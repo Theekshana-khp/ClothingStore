@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: #605d4a;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.CustomerDelegate">
+   <children>
+      <ImageView fitHeight="631.0" fitWidth="931.0" layoutX="6.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhatsApp%20Image%202024-05-31%20at%2012.08.30_0bf68b2a.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="btnAdminLogin" layoutX="301.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnAdminLoginOnAction" prefHeight="40.0" prefWidth="151.0" style="-fx-background-color: #ef5777;" text="Admin Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnUserLogin" layoutX="301.0" layoutY="217.0" mnemonicParsing="false" onAction="#btnUserLoginOnAction" onDragDetected="#btnDragDetectted" onMouseEntered="#btnUserLoginOnMouseEntered" onMouseExited="#btnUserLoginOnMouseExited" prefHeight="40.0" prefWidth="151.0" style="-fx-background-color: #218c74;" text="User Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblCloseLoginOption" layoutX="64.0" layoutY="151.0" prefHeight="224.0" prefWidth="393.0" style="-fx-background-color: #ffdac0;" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text fx:id="lblUserLogin" layoutX="183.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" User Login" visible="false" wrappingWidth="253.18238830566406">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="txtPassword" layoutX="146.0" layoutY="259.0" prefHeight="31.0" prefWidth="246.0" promptText="Password" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="txtEmail" layoutX="146.0" layoutY="221.0" prefHeight="31.0" prefWidth="246.0" promptText="E-Mail" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnLogin" layoutX="277.0" layoutY="307.0" mnemonicParsing="false" onAction="#btnLoginOnAction" onMouseEntered="#btnLoginOnMouseEntered" onMouseExited="#btnLoginOnMouseExited" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #16a085;" text="Login" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdmin1Login" layoutX="278.0" layoutY="307.0" mnemonicParsing="false" onAction="#btnAdmin1LoginOnAction" onMouseEntered="#btnLoginOnMouseEntered" onMouseExited="#btnLoginOnMouseExited" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #16a085;" text="Login" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnResetPassword" layoutX="146.0" layoutY="307.0" mnemonicParsing="false" onAction="#btnResetPasswordonAction" prefHeight="31.0" prefWidth="126.0" style="-fx-background-color: #b71540;" text="Reset Password " textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblFirstBackGround" prefHeight="530.0" prefWidth="236.0" style="-fx-background-color: #605d4a;" visible="false" />
+      <Label layoutX="-2.0" layoutY="-3.0" opacity="0.93" prefHeight="530.0" prefWidth="938.0" style="-fx-background-color: 2db798;" visible="false" />
+      <ImageView fx:id="DashBoardBackground" fitHeight="535.0" fitWidth="714.0" layoutX="234.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@WhatsApp%20Image%202024-06-02%20at%2011.09.43_eaea93fa.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblOrder" layoutX="264.0" layoutY="46.0" prefHeight="138.0" prefWidth="654.0" visible="false">
+        <columns>
+          <TableColumn fx:id="tblColOrderID" prefWidth="82.4000244140625" text="Order ID" />
+          <TableColumn fx:id="tblColProductID" prefWidth="91.20001220703125" text="Product ID" />
+            <TableColumn fx:id="tblColProductDesc" prefWidth="133.5999755859375" text="Product Description" />
+            <TableColumn fx:id="tblColTotal" prefWidth="104.79998779296875" text="Total" />
+            <TableColumn fx:id="tblColQuantity" prefWidth="120.0" text="Quantity" />
+            <TableColumn fx:id="tblColPaymentMethod" prefWidth="124.79997558593755" text="Payment method" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtQuantity" layoutX="439.0" layoutY="414.0" prefHeight="30.0" prefWidth="178.0" promptText="Quantity" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <Text fx:id="lblProductID" fill="WHITE" layoutX="271.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product ID" visible="false" wrappingWidth="126.39999999999998">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblQuantity" fill="WHITE" layoutX="272.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" visible="false" wrappingWidth="126.39999999999998">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblPaymentMethod" fill="WHITE" layoutX="271.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Method" visible="false" wrappingWidth="168.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblTotal" fill="WHITE" layoutX="270.0" layoutY="474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" visible="false" wrappingWidth="168.0000061035156">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtTotal" layoutX="438.0" layoutY="450.0" prefHeight="30.0" prefWidth="236.0" promptText="Total" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <Button fx:id="btnAddToCart" layoutX="528.0" layoutY="494.0" mnemonicParsing="false" onAction="#btnOnActionAddToCart" onMouseEntered="#btnAddToCartEnterrd" onMouseExited="#btnAddToCartExited" prefHeight="26.0" prefWidth="145.0" style="-fx-background-color: #dff9fb;" text="ADD TO Cart" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnClearTextBox" layoutX="271.0" layoutY="494.0" mnemonicParsing="false" onMouseEntered="#btnClearTextBoxEntered" onMouseExited="#btnClearTextBoxExited" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #dff9fb;" text="Clear Text Box" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnQuantityAdd" layoutX="626.0" layoutY="416.0" mnemonicParsing="false" onAction="#AddOnAction" onMouseEntered="#AddOnActionEntered" onMouseExited="#AddOnActionExited" prefHeight="26.0" prefWidth="47.0" style="-fx-background-color: #dff9fb;" text="Add" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line fx:id="lineDashBoard" endX="-16.39996337890625" endY="233.0" layoutX="700.0" layoutY="281.0" startX="-16.39996337890625" startY="-73.39999389648438" stroke="#ffffff42" style="-fx-fill: #fbc531; -fx-opacity: 100;" visible="false" />
+      <Button fx:id="btnPlaceOrder" layoutX="704.0" layoutY="332.0" mnemonicParsing="false" onAction="#placeOrderOnAction" onMouseEntered="#btnPlaceOrderEntered" onMouseExited="#btnPlaceOrderExited" prefHeight="40.0" prefWidth="221.0" style="-fx-background-color: #218c74;" text="Place Order" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnPlaceNewOrder" layoutX="704.0" layoutY="385.0" mnemonicParsing="false" onMouseEntered="#btnPlaceNewOrderEnterd" onMouseExited="#btnPlaceNewOrderExited" prefHeight="40.0" prefWidth="221.0" style="-fx-background-color: #b71540;" text="Place New Order" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblNetTotalTag" layoutX="704.0" layoutY="275.0" prefHeight="30.0" prefWidth="108.0" text="Net Total  -" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNetTotal" layoutX="865.0" layoutY="270.0" prefHeight="40.0" prefWidth="78.0" text="0" textFill="#ffd941" visible="false">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRsTag" layoutX="827.0" layoutY="267.0" prefHeight="46.0" prefWidth="38.0" text="RS . " textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="OrtherSettingBackground" layoutX="-1.0" layoutY="-3.0" prefHeight="536.0" prefWidth="227.0" style="-fx-background-color: #685935;" visible="false" />
+      <ImageView fx:id="b" fitHeight="535.0" fitWidth="227.0" layoutX="3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@WhatsApp%20Image%202024-06-02%20at%2012.55.52_a4124d6b.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgAccountSettings" fitHeight="152.0" fitWidth="151.0" layoutX="40.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@WhatsApp%20Image%202024-05-31%20at%2023.42.01_8f6a7900.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgSupplierSettings" fitHeight="145.0" fitWidth="151.0" layoutX="42.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@supplier%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgProductSettings" fitHeight="151.0" fitWidth="145.0" layoutX="42.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@new-product%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAccountSettings" layoutX="31.0" layoutY="151.0" mnemonicParsing="false" onAction="#btnAccountSettingsOnAction" onMouseEntered="#btnAccountSettingsOnmouseEntered" onMouseExited="#btnAccountSettingsOnmouseExisted" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: #dff9fb;" text="Account Settings" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnProductSettings" layoutX="31.0" layoutY="494.0" mnemonicParsing="false" onAction="#btnProductSettingsOnAction" onMouseEntered="#btnProductSettingsEnterd" onMouseExited="#btnProductSettingsExist" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: #dff9fb;" text="Product Details &amp; Settings" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnSupplierSettings" layoutX="31.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnSupplierSettingsOnAction" onMouseEntered="#btnSupplierSettingsentered" onMouseExited="#btnSupplierSettingsExisted" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: #dff9fb;" text="Supplier Settings" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Line fx:id="lineMain" endX="-19.000015258789062" endY="526.0" layoutX="249.0" layoutY="5.0" startX="-23.000015258789062" startY="-7.999997138977051" stroke="#ffffff42" visible="false" />
+      <Text fx:id="lblUserDashBoard" fill="WHITE" layoutX="447.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User DashBoard" visible="false" wrappingWidth="306.13665771484375">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblCustomerName" fill="#f2ff00" layoutX="269.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" visible="false" wrappingWidth="167.9999999999999">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblCustomerEmail" fill="#ffff01" layoutX="269.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Email" visible="false" wrappingWidth="167.9999999999999">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="ChoiceBoxProductID" layoutX="438.0" layoutY="379.0" prefHeight="26.0" prefWidth="236.0" visible="false" />
+      <ComboBox fx:id="choiceBoxPaymentMethod" layoutX="438.0" layoutY="347.0" prefHeight="26.0" prefWidth="236.0" visible="false" />
+      <JFXTextField fx:id="txtCustomerEmail" focusColor="WHITE" layoutX="437.0" layoutY="201.0" prefHeight="30.0" prefWidth="236.0" style="-fx-background-color: #ffffff;" unFocusColor="#dffc00" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerName" layoutX="437.0" layoutY="241.0" prefHeight="31.0" prefWidth="236.0" style="-fx-background-color: #ffffff;" unFocusColor="#eaff00" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Text fx:id="lblOrderID" fill="WHITE" layoutX="704.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID   - " visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="txtOrderID" layoutX="865.0" layoutY="237.0" prefHeight="40.0" prefWidth="60.0" text="C0001" textFill="#ffd941" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProductDetails" layoutX="355.0" layoutY="292.0" prefHeight="40.0" prefWidth="236.0" style="-fx-background-size: #c0392b;" text="Product Details" textFill="#ccff00" visible="false">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbldate" layoutX="264.0" layoutY="22.0" prefHeight="24.0" prefWidth="114.0" text="Label" textFill="#eeff00" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="Time" layoutX="838.0" layoutY="22.0" prefHeight="24.0" prefWidth="84.0" text="Label" textFill="#ddff00" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderDetail" layoutX="732.0" layoutY="201.0" prefHeight="39.0" prefWidth="190.0" text="Order Details" textFill="#eaff5e" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="accountSettingsBackground" fitHeight="353.0" fitWidth="227.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@poo0dow.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnChangePassword" layoutX="19.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnChangePasswordOnAction" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #f1c40f;" text="Change PassWord" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLogOut" layoutX="20.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" onMouseEntered="#btnLogOutEntered" onMouseExited="#btnLogOutExited" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #b71540;" text="Log Out" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblAccountSettingUserName" layoutX="13.0" layoutY="190.0" prefHeight="30.0" prefWidth="151.0" text="User Name    " textFill="#e1ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUserName" layoutX="10.0" layoutY="224.0" prefHeight="32.0" prefWidth="227.0" text="Pasindu Theekshana" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="AccountSettingsBack" layoutX="136.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnAccountSettingGoBackOnAction" prefHeight="24.0" prefWidth="84.0" style="-fx-background-color: #218c74;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblUserNumber" layoutX="85.0" layoutY="252.0" prefHeight="40.0" prefWidth="70.0" text="01" textFill="WHITE" visible="false">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgSupplierSettings1" fitHeight="145.0" fitWidth="151.0" layoutX="39.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@supplier%20(1).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAddSupplier" layoutX="24.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnAddSupplierOnAction" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #218c74;" text="ADD Supplier" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemoveSupplier" layoutX="24.0" layoutY="366.0" mnemonicParsing="false" onAction="#btnRemoveSupplierOnAction" prefHeight="38.0" prefWidth="178.0" style="-fx-background-color: #c23616;" text="Remove Supplier" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateSupplier" layoutX="22.0" layoutY="309.0" mnemonicParsing="false" onAction="#btnUpdateSupplierOnAction" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #f0932b;" text="Update Supplier" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblSupplierSetting" layoutX="20.0" layoutY="-5.0" prefHeight="54.0" prefWidth="200.0" text="Supplier Settings" textFill="#e5ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSupplierSettingsBack" layoutX="148.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnSupplierSettingsBackOnAction" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtSupplierName2" layoutX="16.0" layoutY="308.0" prefHeight="26.0" prefWidth="200.0" promptText="Supplier Name" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSpplierCompany" layoutX="15.0" layoutY="444.0" prefHeight="26.0" prefWidth="200.0" promptText="Supplier Company" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSupplierEmail2" layoutX="15.0" layoutY="379.0" prefHeight="26.0" prefWidth="200.0" promptText="Supplier Email" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblFillSupplierDetails" layoutX="51.0" layoutY="243.0" prefHeight="24.0" prefWidth="134.0" text="Fill The Details" textFill="#f2ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAddSupplierToDataBase" layoutX="9.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnAddSupplierToDataBaseOnAction" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #218c74;" text="Add" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddSupplierBack" layoutX="139.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnAddSupplierBackOnAction" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblSupplierName" layoutX="18.0" layoutY="269.0" prefHeight="31.0" prefWidth="126.0" text="Name" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierCompany" layoutX="18.0" layoutY="409.0" prefHeight="31.0" prefWidth="126.0" text="Company" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierEMail" layoutX="18.0" layoutY="342.0" prefHeight="31.0" prefWidth="126.0" text="E-Mail" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAddSupplier1" layoutX="27.0" layoutY="202.0" mnemonicParsing="false" onAction="#btnAddSupplierOnAction" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #ffbe76;" text="ADD Supplier" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateSupplier1" layoutX="25.0" layoutY="205.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #f0932b;" text="Update Supplier" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="chekByID" layoutX="55.0" layoutY="274.0" mnemonicParsing="false" onAction="#CheakByIdOnAction" selected="true" text="Cheak By ID" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cheakByName" layoutX="55.0" layoutY="306.0" mnemonicParsing="false" onAction="#cheakByNameOnAction" text="Cheak By Name" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="btnEnterSuppierID" layoutX="26.0" layoutY="366.0" prefHeight="26.0" prefWidth="178.0" promptText="Enter Supplier ID" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnUpdateDetails" layoutX="24.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnUpdateDetailsOnAction" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #218c74;" text="Update " textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="brnSupplierSettingsBack" layoutX="142.0" layoutY="491.0" mnemonicParsing="false" onAction="#brnSupplierSettingsBackOnAction" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtSupplierCompany" layoutX="13.0" layoutY="318.0" prefHeight="32.0" prefWidth="200.0" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSupplier3Name" layoutX="14.0" layoutY="241.0" prefHeight="32.0" prefWidth="200.0" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSupplierEmail3" layoutX="13.0" layoutY="280.0" prefHeight="32.0" prefWidth="200.0" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblSupplierID" layoutX="25.0" layoutY="202.0" prefHeight="43.0" prefWidth="200.0" text="Supplier ID   : 0001" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSupplierProductUpdate" layoutX="13.0" layoutY="365.0" mnemonicParsing="false" onAction="#btnSpplierProductUpdateOnAction" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: #f9ca24;" text="Add New Products" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateSupplierDataBase" layoutX="11.0" layoutY="405.0" mnemonicParsing="false" onAction="#btnUpdateSupplierDataBaseOnAction" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #218c74;" text="Update" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSupplierUpdate2Back" layoutX="120.0" layoutY="488.0" mnemonicParsing="false" onAction="#btnSupplierUpdate2BackOnAction" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableSupplierPastProducts" layoutX="7.0" layoutY="51.0" prefHeight="126.0" prefWidth="214.0" visible="false">
+        <columns>
+          <TableColumn fx:id="tblSupplerPastProductID" prefWidth="75.0" text="ProductID" />
+          <TableColumn fx:id="tblSupplierPastDescription" prefWidth="138.40001525878907" text="Description" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblSupplierCurrentProducts" layoutX="8.0" layoutY="217.0" prefHeight="151.0" prefWidth="214.0" visible="false">
+         <columns>
+            <TableColumn fx:id="tblSupplierCurrentProductID" prefWidth="75.0" text="ProductID" />
+            <TableColumn fx:id="tblSupplierCurrentDescription" prefWidth="136.800048828125" text="Description" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="choiceBoxUpdateSupplierProducts" layoutX="12.0" layoutY="391.0" prefHeight="26.0" prefWidth="138.0" visible="false" />
+      <Button fx:id="btnAddNewProducts" layoutX="163.0" layoutY="392.0" mnemonicParsing="false" onAction="#btnAddNewProductsOnAction" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: #16a085;" text="Add" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateProductList" layoutX="16.0" layoutY="428.0" mnemonicParsing="false" onAction="#btnUpdateProductListOnAction" prefHeight="26.0" prefWidth="208.0" style="-fx-background-color: #f1c40f;" text="Update ProductList" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSupplierUpdateBack4OnAction" layoutX="141.0" layoutY="495.0" mnemonicParsing="false" onAction="#btnSupplierUpdateBack4OnActionOnAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblupdateProductList" layoutX="22.0" layoutY="178.0" prefHeight="18.0" prefWidth="178.0" text="Update Product List" textFill="#fbff00" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRemoveSupplier1" layoutX="29.0" layoutY="205.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="178.0" style="-fx-background-color: #c23616;" text="Remove Supplier" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelRemoveSupplierID" layoutX="27.0" layoutY="258.0" prefHeight="43.0" prefWidth="178.0" text="Enter Supplier ID" textFill="#d4ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRemoveSupplierID" layoutX="26.0" layoutY="302.0" prefHeight="26.0" prefWidth="178.0" visible="false" />
+      <Button fx:id="btnDelateSupplier" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#btnDelateSupplierOnAction" prefHeight="38.0" prefWidth="178.0" style="-fx-background-color: #218c74;" text="Delate Supplier" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemoveSuppilerBack" layoutX="144.0" layoutY="495.0" mnemonicParsing="false" onAction="#btnRemoveSuppilerBackonAction" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgProductSettings1" fitHeight="151.0" fitWidth="145.0" layoutX="52.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@new-product%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgProductSettings3" fitHeight="151.0" fitWidth="145.0" layoutX="43.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@new-product%20(1).png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblProductSettings" layoutX="18.0" layoutY="2.0" prefHeight="39.0" prefWidth="214.0" text="Product Settings" textFill="#d4ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnProductDetails" layoutX="23.0" layoutY="218.0" mnemonicParsing="false" onAction="#btnProductDetailsOnAction" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #218c74;" text="Product Details" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateProduct" layoutX="26.0" layoutY="365.0" mnemonicParsing="false" onAction="#btnUpdateProductOnAction" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #ffbe76;" text="Update Products" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddProduct" layoutX="25.0" layoutY="269.0" mnemonicParsing="false" onAction="#btnAddProductOnAction" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #10ac84;" text="Add Products" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemoveProduct" layoutX="26.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnRemoveProductOnAction" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #ff9f43;" text="Remove Products" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnProductSettingsback" layoutX="150.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnProductSettingsbackOnAction" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="cheakBoxProductName" layoutX="28.0" layoutY="284.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="168.0" selected="true" text="Cheak By Name" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cheakBoxproductID" layoutX="27.0" layoutY="317.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="190.0" text="Cheak By ProductID" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="txtProductID" layoutX="26.0" layoutY="363.0" prefHeight="26.0" prefWidth="178.0" promptText="Enter ProductID" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSearchProduct" layoutX="26.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnSearchProductOnAction" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #ffda79;" text="Search " visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnProductDetailsBack" layoutX="142.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnProductDetailsBackoAction" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblProductSettingID" layoutX="16.0" layoutY="176.0" prefHeight="32.0" prefWidth="214.0" text="Product ID" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProductSettingDesc" layoutX="13.0" layoutY="240.0" prefHeight="32.0" prefWidth="214.0" text="Product Description" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProductSettingQTYOnHand" layoutX="13.0" layoutY="296.0" prefHeight="32.0" prefWidth="214.0" text="Quantity On Hand" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProductSettingSize" layoutX="15.0" layoutY="358.0" prefHeight="32.0" prefWidth="214.0" text="Size" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtProductSettingID" layoutX="15.0" layoutY="206.0" prefHeight="26.0" prefWidth="200.0" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtProductSettingDesc" layoutX="13.0" layoutY="267.0" prefHeight="26.0" prefWidth="200.0" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtProductSettingQTY" layoutX="13.0" layoutY="328.0" prefHeight="26.0" prefWidth="200.0" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtProductSettingSize" layoutX="15.0" layoutY="389.0" prefHeight="26.0" prefWidth="200.0" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Label fx:id="lblProductSettingUnitPrice" layoutX="15.0" layoutY="419.0" prefHeight="32.0" prefWidth="214.0" text="Unit Price" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtProductSettingUnitPrice" layoutX="15.0" layoutY="450.0" prefHeight="26.0" prefWidth="200.0" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Button fx:id="btnProductIDLastBack" layoutX="149.0" layoutY="497.0" mnemonicParsing="false" onAction="#btnProductIDLastBackOnAction" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblproductAddName" layoutX="17.0" layoutY="193.0" prefHeight="30.0" prefWidth="126.0" text="Name" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblproductAddQuantity" layoutX="17.0" layoutY="370.0" prefHeight="30.0" prefWidth="126.0" text="Quantity" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblproductAddUnitPrice" layoutX="17.0" layoutY="313.0" prefHeight="30.0" prefWidth="126.0" text="Unit Price" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblproductAddSize" layoutX="17.0" layoutY="255.0" prefHeight="30.0" prefWidth="126.0" text="Size" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtproductAddQuantity" layoutX="15.0" layoutY="401.0" prefHeight="26.0" prefWidth="190.0" visible="false" />
+      <TextField fx:id="txtproductAddUnitPrice" layoutX="15.0" layoutY="343.0" prefHeight="26.0" prefWidth="190.0" visible="false" />
+      <TextField fx:id="txtproductAddSize" layoutX="15.0" layoutY="286.0" prefHeight="26.0" prefWidth="190.0" visible="false" />
+      <TextField fx:id="txtproductAddName" layoutX="15.0" layoutY="226.0" prefHeight="26.0" prefWidth="190.0" visible="false" />
+      <Label fx:id="lblproductAddCategory" layoutX="18.0" layoutY="428.0" prefHeight="30.0" prefWidth="126.0" text="Category" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="choiceBoxproductAddCategory" layoutX="14.0" layoutY="458.0" prefHeight="26.0" prefWidth="190.0" visible="false" />
+      <Button fx:id="btnLastAddProduct" layoutX="16.0" layoutY="499.0" mnemonicParsing="false" onAction="#btnLastAddProductOnAction" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #218c74;" text="ADD" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLastAddProductBack" layoutX="120.0" layoutY="499.0" mnemonicParsing="false" onAction="#btnLastAddProductBackOnAction" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemoveProductDelate" layoutX="27.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnremoveProductDelateOnAction" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #eb3b5a;" text="Delate " textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnProductupdateDetails" layoutX="26.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnProductupdateDetailsOmAction" prefHeight="26.0" prefWidth="178.0" style="-fx-background-color: #fad390;" text="Update" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnProductUpdatelastback" layoutX="125.0" layoutY="497.0" mnemonicParsing="false" onAction="#btnProductUpdatelastbackOnAction" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLastUpdate" layoutX="13.0" layoutY="499.0" mnemonicParsing="false" onAction="#btnLastUpdateOnAction" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #218c74;" text="Update" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblOrder1" layoutX="258.0" layoutY="46.0" prefHeight="234.0" prefWidth="654.0" visible="false">
+         <columns>
+            <TableColumn fx:id="tblColOrderID1" prefWidth="82.4000244140625" text="Order ID" visible="false" />
+            <TableColumn fx:id="tblColProductID1" prefWidth="91.20001220703125" text="Product ID" visible="false" />
+            <TableColumn fx:id="tblColProductDesc1" prefWidth="133.5999755859375" text="Product Description" visible="false" />
+            <TableColumn fx:id="tblColQuantity1" prefWidth="120.0" text="Quantity" visible="false" />
+            <TableColumn fx:id="tblColPaymentMethod1" prefWidth="124.79997558593755" text="Payment method" visible="false" />
+            <TableColumn fx:id="tblColTotal1" prefWidth="104.79998779296875" text="Total" visible="false" />
+         </columns>
+      </TableView>
+      <ImageView fx:id="returnCustomerBackground" fitHeight="254.0" fitWidth="699.0" layoutX="234.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@rgrtgtgt.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblReturnCustomer" layoutX="424.0" layoutY="284.0" prefHeight="46.0" prefWidth="318.0" text="Return Customer Settings" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblReturnOrderID" layoutX="372.0" layoutY="348.0" prefHeight="48.0" prefWidth="190.0" text="Enter Order ID" textFill="#d4ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtReturnOrderID" layoutX="566.0" layoutY="356.0" prefHeight="31.0" prefWidth="145.0" promptText="C002" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblreturnItems" layoutX="373.0" layoutY="395.0" prefHeight="48.0" prefWidth="190.0" text="Order Item" textFill="#d4ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblReturnProductQuantity" layoutX="373.0" layoutY="439.0" prefHeight="48.0" prefWidth="200.0" text="Product Quantity" textFill="#d4ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtReturnProductQuantity" layoutX="566.0" layoutY="447.0" prefHeight="31.0" prefWidth="200.0" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXCheckBox fx:id="cheakTypeNewOrder" checkedColor="#139905" layoutX="783.0" layoutY="433.0" onAction="#cheakTypeNewOrderOnAction" selected="true" text="New Order" textFill="#d0ff00" unCheckedColor="#c3ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXCheckBox>
+      <Button fx:id="btnReturn" layoutX="683.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnReturnOnAction" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #218c74;" text="Return" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <JFXCheckBox fx:id="cheakTypeReturnOrder" layoutX="783.0" layoutY="462.0" onAction="#cheakTypeReturnOrderOnAction" text="Return Order" textFill="#e1ff00" unCheckedColor="#d9ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXCheckBox>
+      <Button fx:id="BtnReturnOrderAdd" layoutX="716.0" layoutY="357.0" mnemonicParsing="false" onAction="#BtnReturnOrderAddOnAction" prefHeight="28.0" prefWidth="47.0" style="-fx-background-color: #dff9fb;" text="Add" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboBoxReturnOrderItem" layoutX="566.0" layoutY="401.0" prefHeight="32.0" prefWidth="200.0" visible="false" />
+      <ImageView fx:id="imgAdminEmployeeSetting" fitHeight="145.0" fitWidth="151.0" layoutX="43.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@employee_5673264.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgAdminChangeUser" fitHeight="151.0" fitWidth="145.0" layoutX="46.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@exchange_5673283.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAdminEmployeeSetting" layoutX="32.0" layoutY="324.0" mnemonicParsing="false" onAction="#btnAdminEmployeeSettingOnAction" onMouseEntered="#btnSupplierSettingsentered" onMouseExited="#btnSupplierSettingsExisted" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: #dff9fb;" text="Employee Settings" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAdminChangeUser" layoutX="36.0" layoutY="493.0" mnemonicParsing="false" onAction="#btnAdminChangeUserOnAction" onMouseEntered="#btnProductSettingsEnterd" onMouseExited="#btnProductSettingsExist" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: #dff9fb;" text="Login As Another User" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnAdminAccountSetting" layoutX="36.0" layoutY="151.0" mnemonicParsing="false" onAction="#btnAdminAccountSettingOnAction" onMouseEntered="#btnAccountSettingsOnmouseEntered" onMouseExited="#btnAccountSettingsOnmouseExisted" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: #dff9fb;" text="Account Settings" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="imgAdminEmployeeSetting1" fitHeight="145.0" fitWidth="151.0" layoutX="46.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@employee_5673264.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblEmpolyeeSetting" layoutX="22.0" layoutY="15.0" prefHeight="38.0" prefWidth="200.0" text="Employee Settings" textFill="#d4ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEmpolyeeSettingBack" layoutX="161.0" layoutY="495.0" mnemonicParsing="false" onAction="#btnEmpolyeeSettingBackOnAction" prefHeight="14.0" prefWidth="60.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddEmpolye" layoutX="26.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnAddEmpolyeOnAction" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #218c74;" text="Add Employee" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateEmpolyee" layoutX="26.0" layoutY="309.0" mnemonicParsing="false" onAction="#btnUpdateEmpolyeeOnAction" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #e58e26;" text="Update Employee" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemoveempolyee" layoutX="26.0" layoutY="354.0" mnemonicParsing="false" onAction="#btnRemoveempolyeeOnAction" prefHeight="30.0" prefWidth="178.0" style="-fx-background-color: #b71540;" text="Romove Employee" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblAddEmployeeEmail" layoutX="28.0" layoutY="261.0" text="E-Mail" textFill="#d0ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="choiseSelectAsUser" layoutX="29.0" layoutY="437.0" mnemonicParsing="false" text="Select As User" textFill="#eeff00" visible="false">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btnAddEmployeeToDataBase" layoutX="17.0" layoutY="500.0" mnemonicParsing="false" onAction="#btnAddEmployeeToDataBaseOnActio" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: #218c74;" text="ADD" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddEmployeeBack" layoutX="133.0" layoutY="502.0" mnemonicParsing="false" onAction="#btnAddEmployeeBackOnAction" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtAddEmployeeName" layoutX="26.0" layoutY="234.0" prefHeight="26.0" prefWidth="178.0" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddEmployeeEmail" layoutX="25.0" layoutY="288.0" prefHeight="26.0" prefWidth="178.0" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmployeeJobRole" layoutX="26.0" layoutY="339.0" prefHeight="26.0" prefWidth="178.0" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddEmployeeSalary" layoutX="25.0" layoutY="392.0" prefHeight="26.0" prefWidth="178.0" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblAddEmployeeName" layoutX="27.0" layoutY="208.0" text="Name" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmployeeJobRole" layoutX="28.0" layoutY="314.0" text="Job Role" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAddEmployeeSalary" layoutX="26.0" layoutY="367.0" text="Salary" textFill="#d0ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="choiceBoxupdateByID" layoutX="14.0" layoutY="226.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="190.0" selected="true" text="Select By ID" textFill="#e5ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="choiceBoxUpdateByName" layoutX="13.0" layoutY="263.0" mnemonicParsing="false" onAction="#choiceBoxUpdateByNameOnAction" prefHeight="22.0" prefWidth="214.0" text="Select By Name" textFill="#d9ff00" visible="false">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="TxtUpdateEmployee" layoutX="15.0" layoutY="306.0" prefHeight="26.0" prefWidth="190.0" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnUpdateEmployeeSearch" layoutX="17.0" layoutY="344.0" mnemonicParsing="false" onAction="#btnUpdateEmployeeSearchOnAction" prefHeight="31.0" prefWidth="190.0" style="-fx-background-color: #F79F1F;" text="Search" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateEmployeeback" layoutX="157.0" layoutY="496.0" mnemonicParsing="false" onAction="#btnUpdateEmployeebackOnAction" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateEmployeeToDataBase" layoutX="19.0" layoutY="497.0" mnemonicParsing="false" onAction="#btnUpdateEmployeeToDataBaseOnAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #218c74;" text="Update" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdateEmployeeLastBack" layoutX="138.0" layoutY="499.0" mnemonicParsing="false" onAction="#btnUpdateEmployeeLastBackOnAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblRemoveEmployee" layoutX="29.0" layoutY="214.0" prefHeight="40.0" prefWidth="178.0" text="Remove Employee" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRemoveEmployee" layoutX="30.0" layoutY="272.0" prefHeight="26.0" prefWidth="168.0" visible="false" />
+      <Button fx:id="btnDelateEmployee" layoutX="29.0" layoutY="312.0" mnemonicParsing="false" onAction="#btnDelateEmployeeOnAction" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: #ED4C67;" text="Delete" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemoveEmployeeBack" layoutX="152.0" layoutY="502.0" mnemonicParsing="false" onAction="#btnRemoveEmployeeBackOnAction" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgAdminChangeUser1" fitHeight="151.0" fitWidth="145.0" layoutX="39.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@exchange_5673283.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblLoginAsAnotherUser" layoutX="10.0" layoutY="14.0" prefHeight="38.0" prefWidth="208.0" text="Login As Another User" textFill="#ddff00" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAotherUserLoginSelect" layoutX="37.0" layoutY="237.0" prefHeight="39.0" prefWidth="151.0" text="Select User" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboBoxSelectAnotherUser" layoutX="34.0" layoutY="290.0" prefWidth="150.0" visible="false" />
+      <Button fx:id="btnLoginAsAnotherUser" layoutX="34.0" layoutY="327.0" mnemonicParsing="false" onAction="#btnLoginAsAnotherUserOnAction" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #218c74;" text="Login" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLoginAsAnotherUserBack" layoutX="151.0" layoutY="495.0" mnemonicParsing="false" onAction="#btnLoginAsAnotherUserBackOnAction" prefHeight="30.0" prefWidth="52.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdminBack" layoutX="824.0" layoutY="496.0" mnemonicParsing="false" onAction="#btnAdminBackOnAction" prefHeight="28.0" prefWidth="108.0" style="-fx-background-color: #26de81;" text="Admin Back" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblAdminSettingName" layoutX="16.0" layoutY="185.0" prefHeight="32.0" prefWidth="168.0" text="Name" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAdminSettingName" layoutX="16.0" layoutY="211.0" prefHeight="26.0" prefWidth="200.0" visible="false" />
+      <Label fx:id="lblAdminUserID" layoutX="17.0" layoutY="239.0" prefHeight="32.0" prefWidth="168.0" text="User ID" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAdminUserID" layoutX="16.0" layoutY="267.0" prefHeight="26.0" prefWidth="200.0" visible="false" />
+      <Label fx:id="lblAdminEmployeeID" layoutX="17.0" layoutY="293.0" prefHeight="32.0" prefWidth="168.0" text="EmployeeID" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAdminEmployeID" layoutX="16.0" layoutY="326.0" prefHeight="26.0" prefWidth="200.0" visible="false" />
+      <Button fx:id="btnLogOutAdminAccount" layoutX="16.0" layoutY="393.0" mnemonicParsing="false" onAction="#btnLogOutAdminAccountOnAction" prefHeight="32.0" prefWidth="200.0" style="-fx-background-color: #218c74;" text="Log Out" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdminAccountSettingBack" layoutX="166.0" layoutY="496.0" mnemonicParsing="false" onAction="#btnAdminAccountSettingBackOnAction" prefHeight="28.0" prefWidth="54.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblResetpassword" layoutX="147.0" layoutY="156.0" prefHeight="38.0" prefWidth="227.0" text="Reset Password" textFill="#8c2727" visible="false">
+         <font>
+            <Font name="Comic Sans MS Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblResetpasswordEmail" layoutX="147.0" layoutY="211.0" prefHeight="26.0" prefWidth="126.0" text="Enter E-Mail" visible="false">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtResetPasswordEmail" layoutX="145.0" layoutY="240.0" prefHeight="26.0" prefWidth="227.0" visible="false">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnResetPasswordConfirm" layoutX="271.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnResetPasswordConfirmOnAction" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: #218c74;" text="Confirm" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnResetPasswordBack" layoutX="146.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnResetPasswordBackOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblEnterOtp" layoutX="139.0" layoutY="158.0" prefHeight="31.0" prefWidth="263.0" text="Enter OTP Number" visible="false">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnOTPConfirmation" layoutX="257.0" layoutY="252.0" mnemonicParsing="false" onAction="#btnOTPConfirmationOnAction" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #218c74;" text="Confirm" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtOTPEnter" layoutX="141.0" layoutY="219.0" prefHeight="26.0" prefWidth="214.0" visible="false" />
+      <Button fx:id="btnOtpEnterBack" layoutX="141.0" layoutY="252.0" mnemonicParsing="false" onAction="#btnOtpEnterBackOnAction" prefHeight="30.0" prefWidth="94.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnChangePasswordLast" layoutX="263.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnChangePasswordLastonAction" prefHeight="26.0" prefWidth="84.0" style="-fx-background-color: #218c74;" text="Enter" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="changePasswordLastBack" layoutX="137.0" layoutY="263.0" mnemonicParsing="false" onAction="#changePasswordLastBackOnAction" prefHeight="30.0" prefWidth="84.0" style="-fx-background-color: #b71540;" text="Back" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblEnterNewPassword" layoutX="141.0" layoutY="164.0" prefHeight="28.0" prefWidth="200.0" text="Enter New Password" visible="false">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtEnternewPassword" layoutX="136.0" layoutY="195.0" prefHeight="26.0" prefWidth="214.0" promptText="Enter New PassWord" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="txtreenterPassword" layoutX="135.0" layoutY="228.0" prefHeight="26.0" prefWidth="214.0" promptText="Re Enter PassWord" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‚ƒ¤Áÿ1J$524b5b60-ec33-495c-9b9e-494ce2003034
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ğ­¦Áÿ1J$0dee7b4f-d6ae-4ae9-8447-e0e61fd0a8ac
+v
+java:S1121".Extract the assignment out of this expression.(§‹´øÿÿÿÿ8ôÑ¬Áÿ1J$9289804a-36b4-4d49-bd40-5b376d54b989
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹Ÿ¨€8ÖÅ£Áÿ1J$97ff56ef-3942-4457-90f4-c8443ead6d17
+Ü
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(® ©ş8ùÑ¬Áÿ1J$950d7274-0ceb-49cc-9346-4486cfa81ebe
+~
+java:S6437"6Revoke and change this password, as it is compromised.(îÎÕïùÿÿÿÿ8×­¦Áÿ1J$28d769e2-8aec-4922-bcdc-2e41c2372bfc

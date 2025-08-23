@@ -1,0 +1,66 @@
+
+	java:S112J"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÚŞ‚®‚2J$e0e32a73-25fd-44fe-8541-48f0f0af948f
+	java:S112l"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÛŞ‚®‚2J$3c7d7e2e-83e2-452a-937a-035f5cd79a55
+	java:S112~"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÛŞ‚®‚2J$597dd332-2a06-46cb-81e7-f4505f1741b0
+	java:S112Œ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÛŞ‚®‚2J$289f641d-1b0d-4367-9816-ad865d0383c3
+	java:S112¦"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÛŞ‚®‚2J$cd4014f3-6741-4641-917e-84ddb97129fd
+	java:S112º"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÛŞ‚®‚2J$3d23935b-7f48-40d0-97a0-a68cdec97b40
+“	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Î¿â8ÛŞ‚®‚2J$2748ad76-db88-47c1-8980-e4493c6bf170
+’	java:S117w"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ÀÈ|8ÛŞ‚®‚2J$2b1eb363-8b54-4d1e-a335-8dbcbd0cff96
+k
+java:S5411\"(Use a primitive boolean expression here.(Œ›Éô8İŞ‚®‚2J$5774cb4f-f123-418b-bc00-61ceb756d3d7
+q
+java:S5411™"(Use a primitive boolean expression here.(‹ßÏ¯ûÿÿÿÿ8İŞ‚®‚2J$3c447666-6eaf-4a01-91d8-2d6f411744b4
+q
+java:S5411"(Use a primitive boolean expression here.(‹ßÏ¯ûÿÿÿÿ8İŞ‚®‚2J$96cf29d1-3742-4453-8ac0-1267ee141379
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(èÍ¹Ëøÿÿÿÿ8ŞŞ‚®‚2J$61713eb0-2bdb-4706-8345-ceedb8c57688
+n
+java:S22597"LA "NullPointerException" could be thrown; "productDetails" is nullable here.(šóº‰şÿÿÿÿ8µ¤Åƒ2
+i
+java:S2259F"LA "NullPointerException" could be thrown; "productDetails" is nullable here.(éîËÕ8µ¤Åƒ2
+q
+java:S2095B"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(†±É½üÿÿÿÿ8¸¤Åƒ2
+l
+java:S2095)"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(”É…8¸¤Åƒ2
+l
+java:S2095]"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¨”•¬8·¤Åƒ2
+r
+java:S2095®"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ó‘®¾ùÿÿÿÿ8·¤Åƒ2
+r
+java:S2095š"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÿåã˜şÿÿÿÿ8·¤Åƒ2
+l
+java:S2095d"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(²Ç“8·¤Åƒ2
+l
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ŞÒÈ¼8·¤Åƒ2
+l
+java:S2095T"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¹áñŸ8¹¤Åƒ2
+r
+java:S2095Ÿ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(±¹¬ üÿÿÿÿ8¸¤Åƒ2
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(®«º™ùÿÿÿÿ8¸¤Åƒ2
+j
+java:S2095‡"GUse try-with-resources or close this "Statement" in a "finally" clause.(¦ó´Ùûÿÿÿÿ8¸¤Åƒ2
+m
+java:S2095•"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¾‹³š8¸¤Åƒ2
+d
+java:S2095u"GUse try-with-resources or close this "Statement" in a "finally" clause.(úà„8·¤Åƒ2
+g
+java:S6905"Don't use the query "SELECT *".(®«º™ùÿÿÿÿ8üŞ‚®‚2J$7c721f6d-f016-46b0-b294-0a33963bd0b7
+b
+java:S6905)"Don't use the query "SELECT *".(”É…8üŞ‚®‚2J$58923bb3-ad8c-4c9b-a4fb-4d21df54f97d
+b
+java:S6905:"Don't use the query "SELECT *".(ŞÒÈ¼8üŞ‚®‚2J$5ce9d2da-c2eb-4e8f-ac89-7eaa1e23fb33
+g
+java:S6905B"Don't use the query "SELECT *".(†±É½üÿÿÿÿ8üŞ‚®‚2J$acd43478-ac9e-4c2b-b4c8-f1f4ddc380e6
+b
+java:S6905]"Don't use the query "SELECT *".(¨”•¬8ıŞ‚®‚2J$4f4f72f4-d4c4-426c-b27f-36ba223ef444
+<
+java:S6905u"Don't use the query "SELECT *".(úà„8‚¤Åƒ2
+…
+java:S1858w"C"getString" returns a string, there's no need to call "toString()".(…ÀÈ|8€ß‚®‚2J$4bf3a901-c778-4c5c-9dfd-50c465147faf
+B
+java:S6905‡"Don't use the query "SELECT *".(¦ó´Ùûÿÿÿÿ8¢‚¤Åƒ2
+Œ
+java:S1858‰"C"getString" returns a string, there's no need to call "toString()".(¹øÉ„úÿÿÿÿ8€ß‚®‚2J$ce947fd0-8d02-4a21-be31-7506a1d471b8
+V
+java:S1128"9Remove this unused import 'bisinessLayer.model.Supplier'.(¯¡¨Ş8„ƒ¤Åƒ2

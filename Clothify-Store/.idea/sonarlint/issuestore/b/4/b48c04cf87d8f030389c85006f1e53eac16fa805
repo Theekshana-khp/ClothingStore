@@ -1,0 +1,5 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûÁ¬ã8ôäç2J$2d97174c-3706-4195-8045-cca5743a4954
+™	java:S116"RRename this field "Company" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úƒ†‚ıÿÿÿÿ8öäç2J$278fead9-c441-4296-8250-46e34fb19fca
+‡
+java:S1128"?Remove this unused import 'javafx.collections.ObservableArray'.(Ä‹¸İüÿÿÿÿ8¬£ç2J$7682aaa6-6cff-4493-9a1e-e8f6c789aafd

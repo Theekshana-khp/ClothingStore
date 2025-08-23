@@ -1,0 +1,8 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ûÁ¬ã8½ïË ‚2J$717ad8b6-dede-4cfc-9cb8-7faf6899c894
+‘	java:S116"ORename this field "Size" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î¡Ñµ8¿ïË ‚2J$1aa6aa5e-7721-4189-adf3-176463fe7b0a
+›	java:S116"YRename this field "QuantityOnHand" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß…ü—8ÀïË ‚2J$1c3b9b10-c7b6-4921-b7ef-0ceaae7f367e
+~
+java:S1128";Remove this unused import 'javafx.scene.control.TextField'.(¨¢¤¶8·İ¤‚2J$15120af7-7ce8-4676-aab3-85e916d98b0e
+~
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8ÃïË ‚2J$f134ada0-d7ec-4a25-a1c9-d6ab6176f7a8
