@@ -8,7 +8,7 @@ import daoLayer.employee.EmployeeDao;
 import javafx.collections.ObservableList;
 import util.DaoType;
 
-public class EmployeeBoImpl implements EmpolyeeBo {
+public class EmployeeBoImpl implements EmpolyeeBo{
 
    EmployeeDao instence= DaoFactory.getInstance().getDao(DaoType.Employee);
     public Boolean AddEmployee(Employee newEmployee, Boolean isUser) {
