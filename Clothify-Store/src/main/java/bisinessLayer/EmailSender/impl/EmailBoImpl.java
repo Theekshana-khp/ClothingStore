@@ -3,7 +3,7 @@ package bisinessLayer.EmailSender.impl;
 import bisinessLayer.EmailSender.EmailBo;
 import bisinessLayer.SuperBo;
 
-import java.util.Properties;
+import java.util.Properties ;
 import javax.mail.*;
 import javax.mail.internet.*;
 
