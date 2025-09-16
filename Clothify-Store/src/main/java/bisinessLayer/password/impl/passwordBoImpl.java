@@ -2,7 +2,7 @@ package bisinessLayer.password.impl;
 
 import bisinessLayer.password.PasswordBo;
 import daoLayer.DaoFactory;
-import daoLayer.password.PasswordDao;
+import daoLayer.password.PasswordDao ;
 import util.DaoType;
 
 import java.security.NoSuchAlgorithmException;
